@@ -1,0 +1,6 @@
+<h1><%= @flat.name %></h1>
+<h3><%= @flat.description %></h3>
+<p><%= @flat.address %></p>
+<p>price: $<%= @flat.price_per_night %>/per night</p>
+<p>maximum capacity: <%= @flat.number_of_guests %></p>
+<%= link_to "delete this flat", flat_path(@flat), method: :delete %>
